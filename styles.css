@@ -1,0 +1,219 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff; /* White background for the header */
+}
+
+
+.logo {
+    width: 50px; /* Set Logo size */
+    height: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px; /* Adjust title size as needed */
+    color: #000; /* Black color for the text */
+}
+
+#cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#cart-icon:hover {
+    background-color: #333; /* Dark grey on hover for a subtle effect */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Shadow for depth on hover */
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.product {
+    flex: 0 1 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Light gray border for slight contrast */
+    border-radius: 10px;
+    background-color: #fff; /* White background */
+    text-align: center;
+    color: #000; /* Black text */
+}
+
+.product img {
+    width: 60%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Start offscreen */
+    width: 400px;
+    height: 100%;
+    background: #fff; /* White background */
+    border-left: 3px solid #000; /* Black border */
+    transition: right 0.3s;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5); /* Shadow for depth */
+    z-index: 1001;
+}
+
+.cart-content {
+    padding: 20px;
+    color: #000; /* Black text */
+}
+
+.cart-item {
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    margin: 0 10px;
+    border: 1px solid #000; /* Black border */
+    color: #000; /* Black text */
+}
+
+#checkout-button {
+    padding: 10px 20px;
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.remove-btn {
+    cursor: pointer;
+    color: #000; /* Black for the remove button */
+    margin-left: 10px;
+}
+
+/* Add to Cart button styles */
+button {
+    padding: 10px 20px;
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+button:hover, button:focus {
+    background-color: #333; /* Darker gray for hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow on hover */
+}
+
+button:active {
+    background-color: #111; /* Even darker gray for active state */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Smaller shadow for pressed effect */
+}
+
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -500px; /* Initially off-screen */
+    width: 400px;
+    height: 100%; /* Full height */
+    background-color: #fff; /* Light grey background */
+    border-left: 1px solid #ccc; /* Subtle border for a refined look */
+    transition: right 0.3s; /* Smooth slide-in effect */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;
+    z-index: 1001; /* Ensures it is above other content */
+    display: flex;
+    flex-direction: column; /* Organizes content in a column */
+}
+
+.cart-content {
+    overflow-y: auto; /* Allows scrolling if content exceeds the height */
+    flex-grow: 1; /* Takes up all available space */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px; /* Adds space between items */
+    padding-bottom: 15px; /* Additional padding at the bottom */
+    border-bottom: 1px dashed #ccc; /* Dashed line for a light separation */
+}
+
+.cart-item:last-child {
+    border-bottom: none; /* No border for the last item to avoid double lines */
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.remove-btn {
+    background-color: #000000; /* Bright red for delete button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.order-summary {
+    padding-top: 20px; /* Padding on top to separate from the items */
+    background-color: #ffffff; /* Slightly different background for visual separation */
+}
+
+#checkout-button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #000000; /* Consistent theme color */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font for better readability */
+    margin-top: 20px; /* Space above the button */
+}
+
+#checkout-button:hover {
+    background-color: #000000; /* Darker on hover */
+}
+
+.subtotal, .tax, .total {
+    font-size: 16px;
+    margin-top: 5px; /* Spacing for readability */
+}
+
+.total {
+    font-weight: bold;
+    color: #000;
+}
+
+p {
+    text-align: center;
+}
