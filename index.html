@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagelholic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="images/Logo.jpg" alt="bagelholic" class="logo">
+        <h1>Bagelholic</h1>
+    </div>
+    <div id="cart-icon" onclick="toggleCart()">Shopping Bag (0)</div>
+    <div id="products">
+        <!-- Products will be added here -->
+    </div>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-content">
+            <h2>Shopping Bag</h2>
+            <div id="cart-items">
+                <!-- Cart items will be listed here -->
+            </div>
+            <div class="order-summary">
+                <div class="subtotal">Subtotal: $0</div>
+                <div class="tax">Tax: $0</div>
+                <div class="total">Total: $0</div>
+            </div>
+            <button id="checkout-button">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+        <p>© 2024 Sheena Cao. All rights reserved.</p>
+    </footer>    
+</body>
+</html>
