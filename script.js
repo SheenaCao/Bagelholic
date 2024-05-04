@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const products = [
-        { id: 1, name: 'Roseberry Cream Cheese', price: 3.68, image: 'images/rose.jpg' },
+        { id: 1, name: 'Roseberry Cream Cheese', price: 3.68, image: 'images/Rose.jpg' },
         { id: 2, name: 'Taro Cream Cheese', price: 3.68, image: 'images/taro.jpg' },
         { id: 3, name: 'Pumpkin Pork Floss', price: 3.68, image: 'images/Pumpkin.jpg' },
-        { id: 4, name: 'Matcha Custard Cream', price: 4.68, image: 'images/matcha.jpg' },
+        { id: 4, name: 'Matcha Custard Cream', price: 4.68, image: 'images/Matcha.jpg' },
         { id: 5, name: 'Black Sesame Cream Cheese', price: 4.68, image: 'images/Sesame.jpg' },
         { id: 6, name: 'Cinnamon Cream Cheese', price: 4.68, image: 'images/Cinnamon.jpg' }
     ];
